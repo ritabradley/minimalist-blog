@@ -1,0 +1,11 @@
+.article__button {
+    @include btn;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #000;
+    }
+}

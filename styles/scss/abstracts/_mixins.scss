@@ -1,23 +1,40 @@
 @mixin responsive($breakpoint) {
-  @if $breakpoint == tablet-portrait {
-    @media (max-width: 56.25em) {
-      @content;
+    @if $breakpoint == tablet-portrait {
+        @media (max-width: 56.25em) {
+            @content;
+        }
     }
-  }
-  @if $breakpoint == tablet-landscape {
-    @media (max-width: 76.8em) {
-      @content;
+    @if $breakpoint == tablet-landscape {
+        @media (max-width: 76.8em) {
+            @content;
+        }
     }
-  }
-  @if $breakpoint == large-desktop {
-    @media (min-width: 112.5em) {
-      @content;
+    @if $breakpoint == large-desktop {
+        @media (min-width: 112.5em) {
+            @content;
+        }
     }
-  }
 }
 
 @mixin absCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsive-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@mixin max-width($width: 80vw) {
+    max-width: $width;
+}
+
+@mixin btn {
+    background-color: $black;
+    border: none;
+    border-radius: $border-radius;
+    color: $white;
+    padding: 1rem 4rem;
 }

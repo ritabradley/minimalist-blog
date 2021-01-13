@@ -1,0 +1,40 @@
+.hero {
+    box-shadow: 0 0.3rem 1rem 0 rgba($black, 0.8);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    &__img {
+        @include responsive-img;
+    }
+    .article {
+        background-color: $white;
+        padding: 4rem 2rem;
+        &__tag {
+            text-transform: uppercase;
+            font-family: 'Muli', sans-serif;
+            font-weight: 700;
+            color: $heading-text-color;
+        }
+
+        &__title {
+            font-family: 'HK Grotesk', sans-serif;
+            padding: 2rem 0;
+            font-size: 2.2rem;
+            cursor: pointer;
+        }
+
+        &__content {
+            line-height: 2.5rem;
+        }
+
+        &__timestamp {
+            padding: 2rem 0;
+        }
+
+        &__author {
+            font-family: 'Muli', sans-serif;
+            font-weight: 700;
+            color: $black;
+            cursor: pointer;
+        }
+    }
+}

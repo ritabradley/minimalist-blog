@@ -40,6 +40,59 @@ body {
   font-size: 1.4rem;
 }
 
+.hero {
+  box-shadow: 0 0.3rem 1rem 0 rgba(23, 23, 23, 0.8);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.hero__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.hero .article {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+.hero .article__tag {
+  text-transform: uppercase;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  color: #171717;
+}
+.hero .article__title {
+  font-family: "HK Grotesk", sans-serif;
+  padding: 2rem 0;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+.hero .article__content {
+  line-height: 2.5rem;
+}
+.hero .article__timestamp {
+  padding: 2rem 0;
+}
+.hero .article__author {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  color: #171717;
+  cursor: pointer;
+}
+
+.article__button {
+  background-color: #171717;
+  border: none;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  padding: 1rem 4rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.article__button:hover {
+  background-color: #000;
+}
+
 .navbar {
   font-size: 1.4rem;
   font-family: "Open Sans", sans-serif;
@@ -110,6 +163,13 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
+}
+
+.content-container {
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
 }
 
 .footer {
