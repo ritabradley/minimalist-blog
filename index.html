@@ -1,39 +1,48 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Dream Trip</title>
-    <link href="styles/css/style.css" rel="stylesheet">
-</head>
-<body>
-<header class="header">
-    <nav class="navbar" id="main-nav">
-        <ul class="navbar__nav">
-            <li class="navbar__nav-link">Home</li>
-            <li class="navbar__nav-link">Posts</li>
-            <li class="navbar__nav-link">Recipes</li>
-            <li class="navbar__nav-link">About me</li>
-        </ul>
-        <span class="navbar__logo">Dream Trip</span>
-        <ul class="navbar__nav">
-            <li class="navbar__nav-link">Article</li>
-            <li class="navbar__nav-link">Contact</li>
-            <li class="navbar__nav-link">Purchase</li>
-        </ul>
-    </nav>
-</header>
-<main class="content-container">
-    <section class="hero">
-        <img alt="" class="hero__img" src="">
-        <article class="hero__blog-post"></article>
-    </section>
-</main>
-<aside class="sidebar"></aside>
-<footer class="footer">
-    <nav class="footer__nav"></nav>
-</footer>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>Dream Trip</title>
+        <link href="styles/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar" id="main-nav">
+                <span class="navbar__toggle" id="navbar-toggle">
+                    <div class="navbar__menu-icon">
+                        <div></div>
+                    </div>
+                </span>
+                <span class="navbar__logo">Dream Trip</span>
+                <ul class="navbar__nav" id='left-nav'>
+                    <li><a class="navbar__nav-link" href="#">Home</a></li>
+                    <li><a class="navbar__nav-link" href="#">Posts</a></li>
+                    <li><a class="navbar__nav-link" href="#">Recipes</a></li>
+                    <li><a class="navbar__nav-link" href="#">About me</a></li>
+                </ul>
+                <ul class="navbar__nav" id='right-nav'>
+                    <li><a class="navbar__nav-link" href="#">Article</a></li>
+                    <li><a class="navbar__nav-link" href="#">Contact</a></li>
+                    <li><a class="navbar__nav-link" href="#">Purchase</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content-container">
+            <section class="hero">
+                <img alt="" class="hero__img" src="">
+                <article class="hero__blog-post"></article>
+            </section>
+        </main>
+        <aside class="sidebar"></aside>
+        <footer class="footer">
+            <nav class="footer__nav"></nav>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+
 </html>

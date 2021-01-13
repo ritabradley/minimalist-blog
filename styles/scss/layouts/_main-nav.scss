@@ -1,0 +1,78 @@
+.navbar {
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+
+    &__nav {
+        list-style-type: none;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $body-text-color;
+            &:hover {
+                background-color: $light-gray;
+            }
+        }
+
+        li {
+            text-align: center;
+            margin: 1.5rem auto;
+        }
+    }
+
+    &__logo {
+        font-family: 'Lora', serif;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 700;
+        color: $black;
+        display: block;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        cursor: pointer;
+        font-size: 2.4rem;
+        color: rgba($black, 0.8);
+    }
+
+    &__menu-icon {
+        margin: 0.4em;
+        width: 4rem;
+
+        &.active {
+            &:before {
+                transform: translateY(9px) rotate(135deg);
+            }
+            &:after {
+                transform: translateY(-9px) rotate(-135deg);
+            }
+
+            div {
+                transform: scale(0);
+            }
+        }
+
+        &:after,
+        &:before,
+        div {
+            background-color: $black;
+            border-radius: 0.3rem;
+            content: '';
+            display: block;
+            height: 0.3rem;
+            margin: 0.6rem 0.4rem;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
