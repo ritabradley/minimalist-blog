@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/abstracts/_fonts.scss",
+    "../scss/base/_reset.scss",
+    "../scss/base/_typography.scss",
+    "../scss/abstracts/_variables.scss"
+  ],
+  "names": [],
+  "mappings": "AA8BQ;AA9BR;EACE;EACA;EAEA;;AAGF;EACE;EACA;EAEA;;AAIF;EACE;EACA;EAEA;;AAGF;EACE;EACA;EAEA;EACA;;AC3BF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;ACXF;EACE,aCDW;EDEX,OCGU;EDFV,WCOe",
+  "file": "style.css"
+}
