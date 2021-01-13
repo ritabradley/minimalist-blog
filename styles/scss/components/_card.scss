@@ -1,5 +1,13 @@
 .hero {
-    box-shadow: 0 0.3rem 1rem 0 rgba($black, 0.8);
+    margin-bottom: 4rem;
+}
+
+.post--lg {
+    margin: 4rem 0;
+}
+.hero,
+.post {
+    box-shadow: 0 0.3rem 1rem 0 rgba($black, 0.2);
     border-radius: 0.3rem;
     overflow: hidden;
     &__img {
