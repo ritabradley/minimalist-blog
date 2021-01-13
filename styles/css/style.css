@@ -1,116 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Open+Sans&display=swap");
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('/fonts/hk-grotesque/hkgrotesk-regular-webfont.woff2') format('woff2'),
-        url('/fonts/hk-grotesque/hkgrotesk-regular-webfont.woff') format('woff');
-    font-weight: normal;
+  font-family: "HK Grotesk";
+  src: url("/fonts/hk-grotesque/hkgrotesk-regular-webfont.woff2") format("woff2"), url("/fonts/hk-grotesque/hkgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: url('/fonts/muli/muli-bold-webfont.woff2') format('woff2'),
-        url('/fonts/muli/muli-bold-webfont.woff') format('woff');
-    font-weight: 700;
+  font-family: "Muli";
+  src: url("/fonts/muli/muli-bold-webfont.woff2") format("woff2"), url("/fonts/muli/muli-bold-webfont.woff") format("woff");
+  font-weight: 700;
 }
 @font-face {
-    font-family: 'Muli';
-    src: url('/fonts/muli/muli-semibold-webfont.woff2') format('woff2'),
-        url('/fonts/muli/muli-semibold-webfont.woff') format('woff');
-    font-weight: 600;
+  font-family: "Muli";
+  src: url("/fonts/muli/muli-semibold-webfont.woff2") format("woff2"), url("/fonts/muli/muli-semibold-webfont.woff") format("woff");
+  font-weight: 600;
 }
 @font-face {
-    font-family: 'Muli';
-    src: url('/fonts/muli/muli-italic-webfont.woff2') format('woff2'),
-        url('/fonts/muli/muli-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Muli";
+  src: url("/fonts/muli/muli-italic-webfont.woff2") format("woff2"), url("/fonts/muli/muli-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
-*,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'HK Grotesk', sans-serif;
-    color: #666666;
-    font-size: 1.4rem;
+  font-family: "HK Grotesk", sans-serif;
+  color: #666666;
+  font-size: 1.4rem;
 }
 
 .navbar {
-    font-size: 1.4rem;
-    font-family: 'Open Sans', sans-serif;
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
 }
 .navbar__nav {
-    list-style-type: none;
-    display: none;
+  list-style-type: none;
+  display: none;
 }
 .navbar__nav.active {
-    display: block;
+  display: block;
 }
 .navbar__nav-link {
-    text-decoration: none;
-    color: #666666;
+  text-decoration: none;
+  color: #666666;
 }
 .navbar__nav-link:hover {
-    color: #333;
+  background-color: #F5F5F5;
 }
 .navbar__nav li {
-    text-align: center;
-    margin: 1.5rem auto;
+  text-align: center;
+  margin: 1.5rem auto;
 }
 .navbar__logo {
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 700;
-    color: #171717;
-    display: block;
-    text-align: center;
-    margin: 1.5rem auto;
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #171717;
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto;
 }
 .navbar__toggle {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    cursor: pointer;
-    font-size: 2.4rem;
-    color: rgba(23, 23, 23, 0.8);
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+  color: rgba(23, 23, 23, 0.8);
 }
 .navbar__menu-icon {
-    margin: 0.4em;
-    width: 4rem;
+  margin: 0.4em;
+  width: 4rem;
 }
 .navbar__menu-icon.active:before {
-    transform: translateY(9px) rotate(135deg);
+  transform: translateY(9px) rotate(135deg);
 }
 .navbar__menu-icon.active:after {
-    transform: translateY(-9px) rotate(-135deg);
+  transform: translateY(-9px) rotate(-135deg);
 }
 .navbar__menu-icon.active div {
-    transform: scale(0);
+  transform: scale(0);
 }
-.navbar__menu-icon:after,
-.navbar__menu-icon:before,
+.navbar__menu-icon:after, .navbar__menu-icon:before,
 .navbar__menu-icon div {
-    background-color: #171717;
-    border-radius: 0.3rem;
-    content: '';
-    display: block;
-    height: 0.3rem;
-    margin: 0.6rem 0.4rem;
-    transition: all 0.2s ease-in-out;
+  background-color: #171717;
+  border-radius: 0.3rem;
+  content: "";
+  display: block;
+  height: 0.3rem;
+  margin: 0.6rem 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pancake {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /*# sourceMappingURL=style.css.map */
