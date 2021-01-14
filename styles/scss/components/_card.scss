@@ -1,5 +1,19 @@
 .hero {
     margin-bottom: 4rem;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        height: 50rem;
+
+        &__img {
+            object-fit: fill;
+            object-position: center;
+            flex: 0 0 70%;
+        }
+        &__article {
+            flex: 0 0 30%;
+        }
+    }
 }
 
 .post--lg {

@@ -45,6 +45,21 @@ body {
 .hero {
   margin-bottom: 4rem;
 }
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    height: 50rem;
+  }
+  .hero__img {
+    object-fit: fill;
+    object-position: center;
+    flex: 0 0 70%;
+  }
+  .hero__article {
+    flex: 0 0 30%;
+  }
+}
 
 .post--lg {
   margin: 4rem 0;
