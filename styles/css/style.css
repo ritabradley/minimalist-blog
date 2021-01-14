@@ -256,6 +256,14 @@ body {
   text-align: center;
   line-height: 4rem;
 }
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+}
 .footer__nav-link {
   color: #e0e0e0;
   text-decoration: none;
