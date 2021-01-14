@@ -42,73 +42,51 @@ body {
   font-size: 1.4rem;
 }
 
-.hero {
-  margin-bottom: 4rem;
-}
-@media (min-width: 768px) {
-  .hero {
-    display: flex;
-    justify-content: flex-end;
-    height: 50rem;
-  }
-  .hero__img {
-    object-fit: fill;
-    object-position: center;
-    flex: 0 0 70%;
-  }
-  .hero__article {
-    flex: 0 0 30%;
-  }
-}
-
 .post--lg {
   margin: 4rem 0;
 }
 
-.hero,
 .post {
   box-shadow: 0 0.3rem 1rem 0 rgba(23, 23, 23, 0.2);
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.hero__img,
 .post__img {
   max-width: 100%;
   max-height: 100%;
 }
-.hero .article,
 .post .article {
   background-color: #ffffff;
   padding: 4rem 2rem;
 }
-.hero .article__tag,
 .post .article__tag {
   text-transform: uppercase;
   font-family: "Muli", sans-serif;
   font-weight: 700;
   color: #171717;
 }
-.hero .article__title,
 .post .article__title {
   font-family: "HK Grotesk", sans-serif;
   padding: 2rem 0;
   font-size: 2.2rem;
   cursor: pointer;
 }
-.hero .article__content,
 .post .article__content {
   line-height: 2.5rem;
 }
-.hero .article__timestamp,
 .post .article__timestamp {
   padding: 2rem 0;
 }
-.hero .article__author,
 .post .article__author {
   font-family: "Muli", sans-serif;
   font-weight: 700;
   color: #171717;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .post.post--lg {
+    margin: 4rem 0;
+  }
 }
 
 .article__button {
@@ -130,6 +108,11 @@ body {
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .post-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .navbar {
